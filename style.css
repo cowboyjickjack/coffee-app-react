@@ -1,0 +1,46 @@
+/*
+    The "page wrapper" is the outermost container for the page. It mimics
+    the behavior of the body tag, but is a div so that it can be styled
+    with more flexibility than the body tag.
+*/
+.page-wrapper {
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+/*
+    The "container", sometimes referred to as a "section", is a container
+    element (semantic when applicable) that vertically separates different
+    areas on the page based on their purpose or topic. It can allow different
+    background colors and properties for each section that help users associate
+    content within it as belonging to the same subject.
+*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+header {
+    padding: 2em;
+}
+
+div.row {
+    display: flex;
+    padding: 2em;
+    column-gap: 2em;
+    border: 1em solid brown;
+}
+
+div h2 {
+    display: flex;
+    justify-content: center;
+}
+
+div.card {
+    width: 14em;
+    height: 18em;
+    border: 0.25em solid brown;
+}
