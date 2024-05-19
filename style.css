@@ -1,21 +1,18 @@
-/*
-    The "page wrapper" is the outermost container for the page. It mimics
-    the behavior of the body tag, but is a div so that it can be styled
-    with more flexibility than the body tag.
-*/
-.page-wrapper {
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
+/* The "page wrapper" is the outermost container for the page. It mimics
+   the behavior of the body tag, but is a div so that it can be styled
+   with more flexibility than the body tag. */
+   .page-wrapper {
     min-height: 100vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
-/*
-    The "container", sometimes referred to as a "section", is a container
-    element (semantic when applicable) that vertically separates different
-    areas on the page based on their purpose or topic. It can allow different
-    background colors and properties for each section that help users associate
-    content within it as belonging to the same subject.
-*/
+/* The "container", sometimes referred to as a "section", is a container
+   element (semantic when applicable) that vertically separates different
+   areas on the page based on their purpose or topic. It can allow different
+   background colors and properties for each section that help users associate
+   content within it as belonging to the same subject. */
 .container {
     display: flex;
     flex-direction: column;
@@ -25,22 +22,113 @@
 
 header {
     padding: 2em;
+    font-family: 'Jacquard 12';
+}
+
+h1 {
+    font-family: 'Jacquard 12';
+    font-size: 4em;
+}
+
+.nav {
+    font-family: 'Jacquard 12';
+    padding: .5em 1em;
+    font-size: 1.25em;
+}
+
+.nav form {
+    flex-wrap: wrap;
+    float: right;
+}
+
+form {
+    display: flex;
+}
+
+input {
+    width: 24em;
+    font-family: 'Jacquard 12';
+}
+
+button {
+    width: 2em;
+    height: 1.5em;
+}
+
+/* Popular Section */
+
+.popular-section {
+    font-family: 'Jacquard 12';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.popular-section .popular {
+    margin-bottom: 20px; /* Adjust as needed for spacing */
+    text-align: center;
 }
 
 div.row {
     display: flex;
+    justify-content: center;
     padding: 2em;
     column-gap: 2em;
     border: 1em solid brown;
 }
 
-div h2 {
-    display: flex;
-    justify-content: center;
+h2.popular {
+    font-size: 3em;
+}
+
+h2.title {
+    text-align: center;
+    font-size: 2.5em;
+    margin: .5em .25em;
 }
 
 div.card {
     width: 14em;
     height: 18em;
-    border: 0.25em solid brown;
+    border: 0.25em solid rgb(87, 16, 16);
+}
+
+/* Categories */
+
+div.row-two {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    column-gap: 2em;
+}
+
+.categories-section {
+    font-family: 'Jacquard 12';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.categories {
+    font-size: 2.5em;
+}
+
+h2.category-title {
+    text-align: center;
+    font-size: 1.75em;
+    margin-top: auto;
+    margin-bottom: 0em;
+}
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 14em;
+    height: 16em;
+    border: 0.2em solid rgb(87, 16, 16);;
+    padding: 1em;
+    box-sizing: border-box;
 }

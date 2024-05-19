@@ -3,29 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dragon's Coffee</title>
+    <title>The Bearded Dragon</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="page-wrapper">
+        <!-- HEADER -->
         <header class="container">
-            <h1>Dragon's Coffee!</h1>
+            <h1>The Bearded Dragon</h1>
         </header>
+        <!-- NAV BAR -->
+        <nav class="nav">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <form action="#">
+                <input type="text" placeholder="Search Coffees" name="search" id="search">
+                <button type="submit">Search</button>
+            </form>
+        </nav>
+        <!-- POPULAR SECTION -->
         <div class="container">
-            <div class="row">
-                <div class="card">
-                    <h2 class="title">Fire and Ice Latte</h2>
+            <section class="popular-section">
+                <h2 class="popular">Tavern Favorites</h2>
+                <div class="row">
+                    <div class="card">
+                        <h2 class="title">Fire and Ice Latte</h2>
+                    </div>
+                    <div class="card">
+                        <h2 class="title">Dragon's Milk</h2>
+                    </div>
+                    <div class="card">
+                        <h2 class="title">Honey Scale Tea</h2>
+                    </div>
+                    <div class="card">
+                        <h2 class="title">Hoard of Caffeine</h2>
+                    </div>
                 </div>
-                <div class="card">
-                    <h2 class="title">Dragon's Milk</h2>
+            </section>
+        </div>
+        <div class="container">
+            <section class="categories-section">
+                <h2 class="categories">Scroll by Category</h2>
+                <div class="row-two">
+                    <div class="category-card">
+                        <h2 class="category-title">Hot Drinks</h2>
+                    </div>
+                    <div class="category-card">
+                        <h2 class="category-title">Iced Drinks</h2>
+                    </div>
+                    <div class="category-card">
+                        <h2 class="category-title">Ales</h2>
+                    </div>
+                    <div class="category-card">
+                        <h2 class="category-title">Grub</h2>
+                    </div>
+                    <div class="category-card">
+                        <h2 class="category-title">Supplies</h2>
+                    </div>
                 </div>
-                <div class="card">
-                    <h2 class="title">Honey Scale Tea</h2>
-                </div>
-                <div class="card">
-                    <h2 class="title">Hoard of Caffeine</h2>
-                </div>
-            </div>
+            </section>
         </div>
     </div>
 </body>
